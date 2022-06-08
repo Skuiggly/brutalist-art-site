@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import styles from "../styles/Layout.module.css"
 import Footer from "./footer";
 
 interface LayoutProps {
@@ -8,7 +7,7 @@ interface LayoutProps {
 };
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Art exhibit</title>
         <meta name="description" content="Website for imaginary art exhibit in brutalist style" />
@@ -28,6 +27,6 @@ export default function Layout({ children }: LayoutProps) {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
