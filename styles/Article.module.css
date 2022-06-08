@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+
+  margin-top: 1em;
+    
+  position: relative;
+
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+
+  height: 600px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  flex: 1;
+  position: relative;
+
+  padding-left: 2em;
+  padding-right: 1em;
+}
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+.button {
+  width: max-content;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/* Phone */
+.image {
+  display: none;
+}
+.container {
+  background-size: cover;
+}
+.card {
+  background-color: hsla(0, 0%, 100%, .2);
+}
+/* Tablet and PC */
+@media only screen and (min-width: 750px) {
+  .container {
+    background-image: none !important;
+
+    height: 600px;
+  }
+
+  .image {
+    display: block;
+    flex: 1;
+    position: relative;
+  }
+}
+
