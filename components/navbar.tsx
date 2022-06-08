@@ -12,12 +12,13 @@ const Navbar = ({ items }:Props) => {
         {items.map((item, i) => {
           return <li key={i} className={styles.item}><Link href={item.href}>{item.text}</Link></li>
         })}
-      </ul>
-      <div className={styles.main_button}>
-        <Link href="/contact-us" >
+      </ul>  
+
+      <Link href="/contact-us" >
+        <a className={styles.main_button}>
           Get in touch
-        </Link>
-      </div>
+        </a>
+      </Link>
     </nav>
 );
 }
