@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--dark-grey);
+  color: white;
+  padding: 0.5ch 4em;
+  transition: 0.2s ease-in;
+}
+.button:hover {
+  --move: 5px;
+  color: var(--text-hover-color);
+  background-color: var(--hover-box-color);
+  /* Moves */
+  transform: translateX(calc(var(--move) * -1)) translateY(calc(var(--move) * -1));
+  /* Then leaves a box shadow where it used to be */
+  box-shadow: var(--move) var(--move) 0 0 var(--text-hover-color);
+}

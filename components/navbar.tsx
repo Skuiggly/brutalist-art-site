@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
+import StyledLink from "./styledlink";
 
 interface Props {
   items: {href: string, text: string}[]
@@ -14,11 +15,9 @@ const Navbar = ({ items }:Props) => {
         })}
       </ul>  
 
-      <Link href="/contact-us" >
-        <a className={styles.main_button}>
-          Get in touch
-        </a>
-      </Link>
+      <StyledLink href="/contact-us">
+        Get in touch
+      </StyledLink>
     </nav>
 );
 }
