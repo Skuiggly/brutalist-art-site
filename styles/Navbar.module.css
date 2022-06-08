@@ -1,0 +1,31 @@
+.ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+/* ITEM */
+.item {
+  --item-box-height: 24px;
+  width: 69px;
+  height: var(--item-box-height);
+  margin-right: 27px;
+
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--item-box-height);
+  line-height: var(--item-box-height);
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15em;
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
