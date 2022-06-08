@@ -7,11 +7,18 @@ interface Props {
 
 const Navbar = ({ items }:Props) => {
   return (
-    <ul className={styles.ul}>
-      {items.map((item, i) => {
-        return <li key={i} className={styles.item}><Link href={item.href}>{item.text}</Link></li>
-      })}
-    </ul>
+    <nav className={styles.nav}>
+      <ul className={styles.ul}>
+        {items.map((item, i) => {
+          return <li key={i} className={styles.item}><Link href={item.href}>{item.text}</Link></li>
+        })}
+      </ul>
+      <div className={styles.main_button}>
+        <Link href="/contact-us" >
+          Get in touch
+        </Link>
+      </div>
+    </nav>
 );
 }
 

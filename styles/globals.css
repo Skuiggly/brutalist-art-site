@@ -40,21 +40,3 @@ a:hover {
 * {
   box-sizing: border-box;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-button {
-  background-color: var(--dark-grey);
-  color: white;
-  padding: 0.5ch 4em;
-}
-.main-button:hover {
-  --move: 5px;
-  background-color: var(--hover-box-color);
-  box-shadow: var(--move) var(--move) 0 0 var(--text-hover-color);
-  transform: translateX(calc(var(--move) * -1)) translateY(calc(var(--move) * -1));
-}

@@ -1,3 +1,10 @@
+/* Navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .ul {
   display: flex;
   list-style-type: none;
@@ -28,4 +35,17 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.main_button {
+  background-color: var(--dark-grey);
+  color: white;
+  padding: 0.5ch 4em;
+}
+.main_button:hover {
+  --move: 5px;
+  color: var(--text-hover-color);
+  background-color: var(--hover-box-color);
+  box-shadow: var(--move) var(--move) 0 0 var(--text-hover-color);
+  transform: translateX(calc(var(--move) * -1)) translateY(calc(var(--move) * -1));
 }
