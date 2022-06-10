@@ -9,13 +9,11 @@ interface Props {
 }
 
 const Article = ({ imgsrc, alt, children}:Props) => {
-  console.log(children);
-  
   return (
     <article className={styles.container} style={{backgroundImage: "url(" + imgsrc + ")"}}>
       <div className={styles.card} >
         {children}
-        <StyledLink href="booking">
+        <StyledLink href="/booking">
           Book your visit
         </StyledLink>
       </div>
