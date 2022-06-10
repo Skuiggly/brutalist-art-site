@@ -61,9 +61,17 @@ main {
   flex-wrap: wrap;
 }
 
+hr {
+  border-top: 1px solid black;
+}
+
 /* Utilities */
 .wrapper {
   margin-top: 1em;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+.flow > * + *  {
+  margin-top: var(--flow-space, 1em);
 }
