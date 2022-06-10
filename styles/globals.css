@@ -1,7 +1,8 @@
 /* Table of Contents
   1 - Variables
   1.1 - Colors
-  2 - General styles
+  2 - Typography
+  3 - General styles
 */
 
 /* 1 - Variables */
@@ -19,7 +20,21 @@
     --text-hover-color: #3322f5;
 }
 
-/* 2 - General styles */
+/* 2 - Typography */
+.main__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+.section-title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.15em;
+}
+
+/* 3 - General styles */
 
 html,
 body {
@@ -40,6 +55,15 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+
 main {
   display: flex;
+  flex-wrap: wrap;
+}
+
+/* Utilities */
+.wrapper {
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
 }

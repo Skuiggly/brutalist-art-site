@@ -3,19 +3,19 @@ import styles from "../styles/Article.module.css"
 import StyledLink from "./styledlink";
 
 interface Props {
-  title: string;
-  description: string;
   imgsrc: string;
   alt: string;
+  children?: React.ReactNode;
 }
 
-const Article = ({ title, description, imgsrc, alt}:Props) => {
+const Article = ({ imgsrc, alt, children}:Props) => {
+  console.log(children);
+  
   return (
     <article className={styles.container} style={{backgroundImage: "url(" + imgsrc + ")"}}>
       <div className={styles.card} >
-        <h1 className={styles.title}>{title}</h1>
-        <p>{description}</p>
-        <StyledLink href="booking" className={styles.button}>
+        {children}
+        <StyledLink href="booking">
           Book your visit
         </StyledLink>
       </div>

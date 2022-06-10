@@ -22,16 +22,6 @@
   padding-left: 2em;
   padding-right: 1em;
 }
-.title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 48px;
-}
-.button {
-  width: max-content;
-  font-weight: 400;
-  font-size: 1.5em;
-}
 
 /* Phone */
 .image {
