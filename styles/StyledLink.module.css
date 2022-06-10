@@ -4,8 +4,7 @@
   padding: 0.5ch 4em;
   transition: 0.2s ease-in;
   width: max-content;
-}
-.button__text {
+
   font-weight: 400;
   font-size: 1.5em;
 }
